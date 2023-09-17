@@ -14,8 +14,9 @@ Your task is to change the text color of the span element with content "Some Tex
 to red when the new element has been spawned on the page.
 
 -->
-
-<script>
+<html>
+    <head>
+    <script>
     //function to change the text to red
     function changeTextColorToRed(){
         const spanElement =document, querySelector('#content span');
@@ -29,4 +30,13 @@ to red when the new element has been spawned on the page.
 
     //Set timeout to change color with function
     setTimeout(changeTextColorToRed, randomDelay);
-</script>
+    </script>
+        </head>
+    <body>
+
+        <div id="content">
+            <span>Some text</span>
+        </div>
+        
+    </body>
+</html>
