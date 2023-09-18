@@ -16,28 +16,9 @@ to red when the new element has been spawned on the page.
 -->
 <!DOCTYPE html>
 <html>
-    <head>
-    <script>
-    //function to change the text to red
-    function changeTextColorToRed(){
-        const spanElement =document, querySelector('#content span');
-        if (spanElement){
-            spanElement.style.color='red';
-        }
-    }
-
-    //Generate random time between 1-1800 seconds
-    const randomDelay = Math.floor(Math.random () * 1800 +1)*1000;
-
-    //Set timeout to change color with function
-    setTimeout(changeTextColorToRed, randomDelay);
-    </script>
-        </head>
-    <body>
-
-        <div id="content">
-            <span>Some text</span>
-        </div>
-
-    </body>
+<body>
+    <div id="content">
+        <span>Some Text</span>
+    </div>
+</body>
 </html>
